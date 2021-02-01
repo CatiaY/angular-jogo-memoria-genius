@@ -2,6 +2,8 @@
 
 Projeto utilizando Typescript e Angular 11.
 
+## Demonstração: [Link](http://jogo-memoria-genius.s3-website-sa-east-1.amazonaws.com/)
+
 <p>&nbsp;</p>
 
 ![Preview](ReadMe/demonstracao.gif)
