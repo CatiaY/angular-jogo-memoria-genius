@@ -1,0 +1,172 @@
+.container {
+    margin: 15px; 
+    font-family: Calibri, 'Trebuchet MS', sans-serif;               
+}
+
+.legenda {    
+    display: flex;
+    margin: 0 auto 0 auto;
+    justify-content: space-between;
+    width: 700px;       
+    font-size: 40px;
+    font-weight: bold; 
+    flex-wrap: wrap;        
+}
+
+.mensagem {    
+    font-size: 30px;
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+
+.main-game {    
+    width: 100%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;      
+}
+
+.genius {        
+    display: grid;
+    grid-template-areas: 'verde vermelho' 'amarelo azul';
+    grid-gap: 20px;    ;
+    border: 20px solid black;
+    background-color: black;
+    border-radius: 100%;
+    width: 700px;
+    height: 700px;
+    cursor: pointer;    
+}
+
+.centro {
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    border: 20px solid black;
+    border-radius: 100%;
+    position: absolute;
+    display:flex;
+    justify-content: center;   
+    align-items: center;
+    margin: auto;
+
+    font-weight: bolder;
+    font-size: 50px; 
+    
+    cursor: pointer; 
+    z-index: 1;    
+}
+
+.centro:hover {    
+    height: 210px;
+    width: 210px;
+    font-size: 55px; 
+    border-width: 15px;
+}
+
+.centro:active {
+    background-color: grey;
+}
+
+.apagado {
+    opacity: 0.6;
+}
+
+.apagado:active {
+    opacity: 1;
+}
+
+.blue {
+    grid-area: azul;
+    background-color: rgb(0, 140, 255);    
+    border-bottom-right-radius: 100%;      
+}
+
+.red {
+    grid-area: vermelho;
+    background-color: red;    
+    border-top-right-radius: 100%;    
+}
+
+.yellow {
+    grid-area: amarelo;
+    background-color: yellow;    
+    border-bottom-left-radius: 100%;    
+}
+
+.green {
+    grid-area: verde;
+    background-color: rgb(0, 255, 0);        
+    border-top-left-radius: 100%;    
+}
+
+.aceso {
+    opacity: 1;    
+}
+
+.habilitado {
+    pointer-events: auto;
+}
+
+.desabilitado {
+    pointer-events: none; 
+}
+
+
+@media screen and (max-width: 700px) {
+    .legenda {    
+        display: flex;        
+        width: 100%;        
+        font-size: 30px;        
+    }
+
+    .mensagem {    
+        font-size: 25px;        
+        margin-top: 10px;
+    }
+    
+    .genius {        
+        grid-gap: 15px;
+        border-width: 15px;
+        width: 450px;
+        height: 450px;        
+    }
+
+    .centro {        
+        height: 150px;
+        width: 150px;
+        border-width: 15px;        
+        font-size: 40px;         
+    }
+    
+    .centro:hover {    
+        height: 160px;
+        width: 160px;
+        font-size: 45px; 
+        border-width: 10px;
+    }
+}
+
+
+@media screen and (max-width: 470px) {
+    .genius {        
+        grid-gap: 10px;
+        border-width: 10px;
+        width: 260px;
+        height: 260px;         
+    }
+
+    .centro {        
+        height: 80px;
+        width: 80px;
+        border-width: 10px;        
+        font-size: 30px;         
+    }
+    
+    .centro:hover {    
+        height: 85px;
+        width: 85px;
+        font-size: 32px; 
+        border-width: 8px;
+    }
+}

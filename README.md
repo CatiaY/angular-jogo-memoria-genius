@@ -1,4 +1,17 @@
-# JogoMemoriaGenius
+# Jogo de memória estilo Genius
+
+Projeto utilizando Typescript e Angular 11.
+
+<p>&nbsp;</p>
+
+![Preview](ReadMe/demonstracao.gif)
+
+<p>&nbsp;</p>
+
+O desenvolvimento do projeto base foi feito a partir da atividade "Criando seu jogo de memória estilo Genius", de [
+Gabriela Pinheiro](https://github.com/SpruceGabriela/genesis-dio), da Digital Innovation One.
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2.
 
