@@ -42,7 +42,7 @@
     background-color: white;
     height: 200px;
     width: 200px;
-    border: 20px solid black;
+    border: 15px solid black;
     border-radius: 100%;
     position: absolute;
     display:flex;
@@ -54,14 +54,15 @@
     font-size: 50px; 
     
     cursor: pointer; 
-    z-index: 1;    
+    z-index: 1; 
+    
+    transform: scale(1);
+    transition: transform .1s;
 }
 
-.centro:hover {    
-    height: 210px;
-    width: 210px;
-    font-size: 55px; 
-    border-width: 15px;
+.centro:hover {                
+    transform: scale(1.05);
+    transition: transform .1s;
 }
 
 .centro:active {
@@ -137,14 +138,7 @@
         width: 150px;
         border-width: 15px;        
         font-size: 40px;         
-    }
-    
-    .centro:hover {    
-        height: 160px;
-        width: 160px;
-        font-size: 45px; 
-        border-width: 10px;
-    }
+    }   
 }
 
 
@@ -161,12 +155,5 @@
         width: 80px;
         border-width: 10px;        
         font-size: 30px;         
-    }
-    
-    .centro:hover {    
-        height: 85px;
-        width: 85px;
-        font-size: 32px; 
-        border-width: 8px;
-    }
+    }    
 }
